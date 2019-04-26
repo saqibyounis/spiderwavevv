@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitITR">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Personal Details"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Father Name"
+            android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/mnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Mobile Numer(+91 xxx xxxxx)"
+            android:inputType="phone" />
+
+
+        <EditText
+            android:id="@+id/contactinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Contact Info"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Are You Staying in Rent"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <RadioGroup
+            android:id="@+id/rentg"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/ry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewPAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="8dp"
+            android:text="Add PAN Card"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imageViewPAN"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            app:srcCompat="@drawable/placeholde" />
+
+        <TextView
+            android:id="@+id/textViewAfadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Aadhaar Card"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewAadhaar"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewAadhaar"
+            app:layout_constraintStart_toStartOf="@+id/imageViewAadhaar"
+            app:layout_constraintTop_toTopOf="@+id/imageViewAadhaar"
+            app:layout_constraintVertical_bias="0.842" />
+
+    <ImageView
+        android:id="@+id/imageViewAadhaar"
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/placeholde" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGSTIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Do you have GSTIN?"/>
+
+        <EditText
+            android:id="@+id/gstn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="GSTIN"
+            android:inputType="textMultiLine|text"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/praddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Permanenet Address"
+            android:inputType="textMultiLine|text" />
+        <EditText
+            android:id="@+id/comaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine|text"
+            android:hint="Communication address" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btnBlueDark" />
+
+        <TextView
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Banking Details:"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+
+        <EditText
+            android:id="@+id/bkn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Name of the Bank" />
+        <EditText
+            android:id="@+id/brk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:hint="Bank Account Number"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint=" IFSC Code," />
+
+
+        <View
+            android:id="@+id/didvider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btnBlueDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Important Documents:"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Scan copy of Cancelled:"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Scan Copy of Form 16 :"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Scan copy of Payslip:"
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <ImageView
+            android:id="@+id/im3"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Do you have any Investment ? If yes, Attach here "
+            android:textColor="@android:color/black"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <ImageView
+            android:id="@+id/di1"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+        <ImageView
+            android:id="@+id/di2"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+        <ImageView
+            android:id="@+id/di3"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+            app:srcCompat="@drawable/placeholde" />
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Submit"
+            android:onClick="submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+</ScrollView>
