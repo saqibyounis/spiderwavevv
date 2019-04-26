@@ -24,7 +24,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-import spencerstudios.com.bungeelib.Bungee;
 
 
 public class SignupPhase2 extends AppCompatActivity {
@@ -83,7 +82,6 @@ public class SignupPhase2 extends AppCompatActivity {
                     intent.putExtra("pw",pw.getText().toString());
                     intent.putExtra("phonenumber",ph.getText().toString());
                     startActivity(intent);
-                    Bungee.shrink(this);
 
 
 

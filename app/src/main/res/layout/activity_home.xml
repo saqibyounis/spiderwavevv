@@ -15,19 +15,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <com.manojbhadane.QButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:onClick="submitITR"
                 android:text="Submit ITR"
                 android:textColor="@android:color/black"
-                app:qb_backgroundColor="@color/btnGreen"
-                app:qb_radius="100"
-                app:qb_strokeColor="@color/btnGreenDark"
-                app:qb_strokeWidth="5" />
+              />
 
-            <com.manojbhadane.QButton
+            <Button
                 android:id="@+id/QButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,12 +32,9 @@
                 android:onClick="loan"
                 android:text="LOANs"
                 android:textColor="@android:color/black"
-                app:qb_backgroundColor="@color/btnGreen"
-                app:qb_radius="100"
-                app:qb_strokeColor="@color/btnGreenDark"
-                app:qb_strokeWidth="5" />
+              />
 
-            <com.manojbhadane.QButton
+            <Button
                 android:id="@+id/QButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,12 +42,9 @@
                 android:onClick="logastics"
                 android:text="Logistics"
                 android:textColor="@android:color/black"
-                app:qb_backgroundColor="@color/btnGreen"
-                app:qb_radius="100"
-                app:qb_strokeColor="@color/btnGreenDark"
-                app:qb_strokeWidth="5" />
+                />
 
-            <com.manojbhadane.QButton
+            <Button
                 android:id="@+id/QButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,12 +52,9 @@
                 android:onClick="checkRewards"
                 android:text="Check Reward"
                 android:textColor="@android:color/black"
-                app:qb_backgroundColor="@color/btnGreen"
-                app:qb_radius="100"
-                app:qb_strokeColor="@color/btnGreenDark"
-                app:qb_strokeWidth="5" />
+               />
 
-            <com.manojbhadane.QButton
+            <Button
                 android:id="@+id/QButton4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,11 +62,6 @@
                 android:onClick="logout"
                 android:text="Log Out"
                 android:textColor="@android:color/black"
-                app:qb_backgroundColor="@color/btnBlue1"
-                app:qb_radius="100"
-                app:qb_strokeColor="@color/btnBlueDark"
-                app:qb_strokeWidth="5"
-
                 />
         </LinearLayout>
     </ScrollView>

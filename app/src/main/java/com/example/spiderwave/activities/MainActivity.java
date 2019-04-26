@@ -15,7 +15,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import spencerstudios.com.bungeelib.Bungee;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login_new);
           email=findViewById(R.id.email);
           pw=findViewById(R.id.pw);
 
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     public void signup(View view){
 
         startActivity(new Intent(MainActivity.this,SignupPhase1.class));
-        Bungee.diagonal(MainActivity.this);
     }
     public void login(View view){
 
@@ -60,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser user=mAuth.getCurrentUser();
         if(user!=null) {
             startActivity(new Intent(this, HomeActivity.class));
-            Bungee.shrink(this);
 
         }
 

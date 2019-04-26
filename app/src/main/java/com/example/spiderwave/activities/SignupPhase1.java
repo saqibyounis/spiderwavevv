@@ -8,7 +8,6 @@ import android.view.View;
 
 import com.example.spiderwave.activities.constatns.Constants;
 
-import spencerstudios.com.bungeelib.Bungee;
 
 public class SignupPhase1 extends AppCompatActivity {
 
@@ -25,14 +24,12 @@ public class SignupPhase1 extends AppCompatActivity {
 
         Constants.emailSignup=true;
         startActivity(new Intent(this,SignupPhase2.class));
-        Bungee.inAndOut(this);
 
     }
 
     public void phonenumberSignup(View view){
         Constants.phonenumberSignup=true;
         startActivity(new Intent(this,SignupPhase2.class));
-        Bungee.inAndOut(this);
 
     }
 

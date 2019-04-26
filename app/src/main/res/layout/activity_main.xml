@@ -29,7 +29,7 @@
             android:onClick="loginByPhonenumber"
             android:padding="5dp"
             android:text="Login By Phonenumber"
-            android:textColor="@color/btnBlueExtraDark" />
+            android:textColor="@color/mdtp_transparent_black" />
 
         <EditText
             android:id="@+id/email"
